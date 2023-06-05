@@ -247,13 +247,16 @@ footer ul li a:hover{
     
      /* Footer */
 
-     .linha1{
+    .linha1{
         flex-direction: column;
-     }
+    }
     
-     #endereco{
+    .titulo{
+        width: 200px;
+    }
+
+    #endereco{
         width: 95%;
-        margin-top: 20px;
-        
+        margin-top: 20px;  
     }
 }
