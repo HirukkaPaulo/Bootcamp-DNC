@@ -1,3 +1,4 @@
+/*Variáveis e Fontes */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 :root{
@@ -6,14 +7,19 @@
     --cinza-dnc: #C9C9C9;
 }
 
+/* Configurações Gerais da Página */
+
+*{
+    color: white;
+    font-family: 'Inter'; 
+    margin: 0;
+    padding: 0;
+}
+
 body{
     background:linear-gradient(180deg, rgba(12, 112, 242, 0.5) 20%, rgba(12,112,242,0) 25%), #303030;
     background-repeat: no-repeat;
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter';
 }
-
 
 #principal{
     border: 0;
@@ -23,13 +29,22 @@ body{
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #bababa;
-    
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 25px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-#principal div a{
+#menu{
+    display: flex;
+    width: 45%;
+    justify-content: space-around;
     font-size: 25px;
     font-weight: 600;
-    color: white;
+}
+
+a{
     text-decoration: none;
 }
 
@@ -37,26 +52,17 @@ body{
     color: #cccccc;
 }
 
-#principal button{
-    margin-right: 5%;
+#botao{
     background-color:var(--azul-dnc) ;
     border: 0;
     height: 40px;
     width: 80px;
     font-size: 20px;
     font-weight: 600;
-    color: white;
     box-shadow: 3px 2px 4px rgba(12,112,242, 0.25);
     cursor: pointer;
-
 }
 
-#menu{
-    display: flex;
-    width: 45%;
-    justify-content: space-around;
-    margin: 5%;
-}
 
 /* Seção Principal do Site */
 
@@ -137,3 +143,105 @@ input[type="checkbox"]{
     box-shadow: 6px 9px 4px rgba(12, 112, 242, 0.25);
     cursor: pointer;
 }
+
+/* Rodapé */
+
+footer{
+    background-color: var(--azul-dnc);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.linha1{
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+footer ul li{
+    padding: 10px 0 10px 0;
+}
+
+footer ul li a:hover{
+    cursor: pointer;
+    color: var(--cinza-dnc);
+}
+
+#endereco{
+    margin-top: 150px;
+}
+
+.titulo{
+    background-color: #303030;
+    border: 0;
+    border-radius: 10px;
+    font-weight: 800;
+    padding: 5px 10px 5px 10px;
+    align-items: center;
+    margin: 20px auto;
+}
+
+.titulo1{
+    width: 100px;
+}
+
+.linha2{
+    padding: 50px;
+}
+
+@media only screen and (max-width: 600px){
+    
+    /* Menu */
+
+    #principal{
+        flex-direction: column;
+        height: auto;
+    
+    }
+
+    #menu{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    #menu a{
+        display: flex;
+        height: 50px;
+    }
+    
+    #botao{
+        width: 100%;
+        margin: 0px;
+    }
+
+    /*Seção */
+    
+    section h1{
+        font-size: 38px;
+    }
+
+    section p{
+        font-size: 20px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+        
+    #form{
+        width: 95%;
+        font-size: 20px;
+    }
+
+    .checkbox-itens label{
+        font-size:10px;
+    }
+    }
