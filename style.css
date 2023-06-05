@@ -205,7 +205,7 @@ footer ul li a:hover{
     #principal{
         flex-direction: column;
         height: auto;
-    
+        padding: 0;
     }
 
     #menu{
@@ -244,4 +244,16 @@ footer ul li a:hover{
     .checkbox-itens label{
         font-size:10px;
     }
+    
+     /* Footer */
+
+     .linha1{
+        flex-direction: column;
+     }
+    
+     #endereco{
+        width: 95%;
+        margin-top: 20px;
+        
     }
+}
